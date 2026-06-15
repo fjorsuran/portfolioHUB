@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>PortfolioHUB</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>PortfolioHUB</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
     <h1>PortfolioHUB</h1>
-    <p>Plataforma para exibir e gerenciar portfólios digitais</p>
-  </header>
 
-  <section class="login">
-    <h2>Login</h2>
+    <h2>Plataforma de Portfólios Digitais</h2>
 
-    <select id="tipoUsuario">
-      <option value="visitante">Visitante</option>
-      <option value="admin">Administrador</option>
-    </select>
+    <p>Bem-vindo ao PortfolioHUB.</p>
 
-    <input type="password" id="senha" placeholder="Digite a senha">
-    <button onclick="entrar()">Entrar</button>
+    <h3>Controle de Usuários</h3>
 
-    <p id="mensagemLogin"></p>
-  </section>
+    <ul>
+        <li>Administrador - Pode gerenciar projetos.</li>
+        <li>Visitante - Pode visualizar projetos.</li>
+    </ul>
 
-  <section class="projetos">
-    <h2>Projetos</h2>
+    <h3>Projetos</h3>
 
-    <div id="areaAdmin" style="display: none;">
-      <input type="text" id="nomeProjeto" placeholder="Nome do projeto">
-      <input type="text" id="descricaoProjeto" placeholder="Descrição do projeto">
-      <button onclick="adicionarProjeto()">Adicionar Projeto</button>
-    </div>
-
-    <div id="listaProjetos">
-      <div class="card">
-        <h3>Projeto Exemplo</h3>
-        <p>Este é um projeto público do PortfolioHUB.</p>
+    <div>
+        <h4>Projeto Exemplo</h4>
+        <p>Sistema desenvolvido para apresentação de portfólios.</p>
         <button>Compartilhar</button>
-      </div>
     </div>
-  </section>
 
-  <footer>
-    <p>Desenvolvido com apoio do Google Gemini</p>
-  </footer>
+    <br>
 
-  <script src="script.js"></script>
+    <button onclick="mensagem()">Acessar Plataforma</button>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
