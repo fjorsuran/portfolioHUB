@@ -1,24 +1,42 @@
-function compartilhar() {
-  alert("Link do projeto copiado para compartilhamento!");
-}
+// Scroll fade-in animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
 
-function acessoNegado() {
-  alert("Acesso negado. Este projeto é privado e exige permissão de administrador.");
-}
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-function login() {
-  const usuario = document.getElementById("usuario").value;
-  const senha = document.getElementById("senha").value;
-  const resultado = document.getElementById("resultado");
+// Login simulation
+function doLogin() {
+  const user = document.getElementById('loginUser').value.trim().toLowerCase();
+  const pass = document.getElementById('loginPass').value;
+  const status = document.getElementById('loginStatus');
 
-  if (usuario === "admin" && senha === "1234") {
-    resultado.innerText = "Login realizado como Administrador. Permissão total concedida.";
-    resultado.style.color = "green";
-  } else if (usuario === "visitante") {
-    resultado.innerText = "Login realizado como Visitante. Acesso apenas aos projetos públicos.";
-    resultado.style.color = "blue";
+  status.className = 'login-status';
+  status.style.display = 'block';
+
+  if (user === 'admin' && pass === 'admin123') {
+    status.classList.add('status-success');
+    status.textContent = '✓ Bem-vindo, Administrador! Acesso total liberado.';
+  } else if (user === 'visitante') {
+    status.classList.add('status-success');
+    status.textContent = '✓ Conectado como visitante. Projetos públicos disponíveis.';
   } else {
-    resultado.innerText = "Usuário ou senha inválidos.";
-    resultado.style.color = "red";
+    status.classList.add('status-error');
+    status.textContent = '✗ Credenciais inválidas. Tente: visitante / admin (senha: admin123).';
+  }
+}
+
+// Share button
+function share(name) {
+  if (navigator.share) {
+    navigator.share({ title: name, url: window.location.href });
+  } else {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      alert('Link copiado: ' + name);
+    });
   }
 }
