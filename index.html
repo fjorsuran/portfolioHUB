@@ -1,119 +1,273 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PortfolioHUB - Felipe Jorsuran</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felipe Jorsuran — PortfolioHUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="topo">
-    <nav>
-      <h2>PortfolioHUB</h2>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#seguranca">Segurança</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Portfolio<span>HUB</span></a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#seguranca">Segurança</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <section class="hero">
-      <h1>Felipe Jorsuran Sousa Amaral</h1>
-      <p>Portfólio digital para apresentação de projetos, habilidades e experiências profissionais.</p>
-      <a href="#projetos" class="botao">Ver Projetos</a>
-    </section>
-  </header>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div>
+    <div class="hero-badge">Disponível para oportunidades</div>
+    <h1>
+      <span class="gradient">Felipe Jorsuran</span><br />Sousa Amaral
+    </h1>
+    <p class="hero-subtitle">
+      Portfólio digital para apresentação de projetos, habilidades e experiências profissionais. Organizado, responsável e focado em resultados.
+    </p>
+    <div class="hero-cta">
+      <a href="#projetos" class="btn-primary">
+        Ver Projetos
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contato" class="btn-ghost">Entrar em contato</a>
+    </div>
+  </div>
+</section>
 
-  <main>
-    <section id="sobre" class="card">
-      <h2>Sobre Mim</h2>
-      <p>
-        Sou um profissional organizado, responsável e focado em resultados.
-        Busco oportunidades para desenvolver habilidades interpessoais,
-        administrativas e tecnológicas.
-      </p>
-    </section>
-
-    <section id="habilidades" class="card">
-      <h2>Habilidades</h2>
-      <div class="grid">
-        <div>Pacote Office</div>
-        <div>Canva</div>
-        <div>Atendimento ao Cliente</div>
-        <div>Organização</div>
-        <div>Git e GitHub</div>
-        <div>HTML, CSS e JavaScript</div>
-      </div>
-    </section>
-
-    <section id="projetos" class="card">
-      <h2>Projetos</h2>
-
-      <div class="projetos">
-        <div class="projeto">
-          <h3>PortfolioHUB</h3>
-          <p>Plataforma centralizada para exibir e gerenciar projetos digitais.</p>
-          <span>Público</span>
-          <button onclick="compartilhar()">Compartilhar</button>
-        </div>
-
-        <div class="projeto">
-          <h3>Currículo Digital</h3>
-          <p>Apresentação online das minhas experiências, habilidades e formação.</p>
-          <span>Público</span>
-          <button onclick="compartilhar()">Compartilhar</button>
-        </div>
-
-        <div class="projeto privado">
-          <h3>Projeto Administrativo</h3>
-          <p>Projeto privado de organização de tarefas e processos internos.</p>
-          <span>Privado</span>
-          <button onclick="acessoNegado()">Acessar</button>
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="container">
+    <span class="section-label">Quem sou</span>
+    <h2>Sobre Mim</h2>
+    <div class="section-divider"></div>
+    <div class="sobre-grid fade-up">
+      <div class="sobre-text">
+        <p>
+          Sou um profissional <strong>organizado, responsável</strong> e focado em resultados. Busco oportunidades para desenvolver habilidades interpessoais, administrativas e tecnológicas.
+        </p>
+        <p>
+          Apaixonado por tecnologia e inovação, utilizo ferramentas modernas para criar soluções práticas e eficientes. Estou sempre em busca de crescimento contínuo.
+        </p>
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Projetos concluídos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Habilidades técnicas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">DF</div>
+            <div class="stat-label">Localização</div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="seguranca" class="card">
-      <h2>Gestão de Usuários e Segurança</h2>
-      <p>
-        O PortfolioHUB possui controle de acesso simulado, separando projetos
-        públicos e privados. Usuários visitantes podem visualizar projetos públicos,
-        enquanto administradores possuem permissão para gerenciar conteúdos.
-      </p>
-
-      <div class="login">
-        <h3>Simulação de Login</h3>
-        <input type="text" id="usuario" placeholder="Usuário">
-        <input type="password" id="senha" placeholder="Senha">
-        <button onclick="login()">Entrar</button>
-        <p id="resultado"></p>
+      <div class="sobre-card">
+        <div class="card-avatar">FJ</div>
+        <div class="card-name">Felipe Jorsuran</div>
+        <div class="card-role">Desenvolvedor &amp; Criador de Conteúdo Digital</div>
+        <div class="card-info-row">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1.5A4.5 4.5 0 017 10.5m0-9A4.5 4.5 0 017 10.5M7 1.5C5.2 1.5 3.5 3 3 5m4-3.5C8.8 1.5 10.5 3 11 5M7 10.5c-1.5 2-3 3-4.5 2m4.5-2c1.5 2 3 3 4.5 2M1 7h12" stroke="#8892A4" stroke-width="1.2" stroke-linecap="round"/></svg>
+          HTML, CSS, JavaScript
+        </div>
+        <div class="card-info-row">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 7.5a2 2 0 100-4 2 2 0 000 4z" stroke="#8892A4" stroke-width="1.2"/><path d="M7 1v1.5M7 11.5V13M1 7h1.5M11.5 7H13" stroke="#8892A4" stroke-width="1.2" stroke-linecap="round"/></svg>
+          Riacho Fundo I — DF, Brasil
+        </div>
+        <div class="card-info-row">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="2" width="12" height="10" rx="2" stroke="#8892A4" stroke-width="1.2"/><path d="M1 5.5h12" stroke="#8892A4" stroke-width="1.2"/></svg>
+          GitHub: fjorsuran
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="gemini" class="card">
-      <h2>Uso da IA Gemini</h2>
-      <p>
-        O Google Gemini foi utilizado como ferramenta de apoio durante a implantação,
-        auxiliando na organização do projeto, estruturação das páginas, documentação,
-        boas práticas de segurança e publicação no GitHub Pages.
-      </p>
-    </section>
+<!-- HABILIDADES -->
+<section id="habilidades">
+  <div class="container">
+    <span class="section-label">Competências</span>
+    <h2>Habilidades</h2>
+    <div class="section-divider"></div>
+    <div class="skills-grid">
+      <div class="skill-item fade-up">
+        <div class="skill-icon">📊</div>
+        <div>
+          <div class="skill-name">Pacote Office</div>
+          <div class="skill-desc">Word, Excel, PowerPoint</div>
+        </div>
+      </div>
+      <div class="skill-item fade-up">
+        <div class="skill-icon">🎨</div>
+        <div>
+          <div class="skill-name">Canva</div>
+          <div class="skill-desc">Design gráfico e identidade visual</div>
+        </div>
+      </div>
+      <div class="skill-item fade-up">
+        <div class="skill-icon">🤝</div>
+        <div>
+          <div class="skill-name">Atendimento ao Cliente</div>
+          <div class="skill-desc">Comunicação e suporte</div>
+        </div>
+      </div>
+      <div class="skill-item fade-up">
+        <div class="skill-icon">📋</div>
+        <div>
+          <div class="skill-name">Organização</div>
+          <div class="skill-desc">Gestão de tarefas e processos</div>
+        </div>
+      </div>
+      <div class="skill-item fade-up">
+        <div class="skill-icon">🔀</div>
+        <div>
+          <div class="skill-name">Git e GitHub</div>
+          <div class="skill-desc">Versionamento e colaboração</div>
+        </div>
+      </div>
+      <div class="skill-item fade-up">
+        <div class="skill-icon">💻</div>
+        <div>
+          <div class="skill-name">HTML, CSS e JavaScript</div>
+          <div class="skill-desc">Desenvolvimento web front-end</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="contato" class="card">
-      <h2>Contato</h2>
-      <p>E-mail: felipe.jorsuran@gmail.com</p>
-      <p>GitHub: fjorsuran</p>
-      <p>Localização: Riacho Fundo I - DF</p>
-    </section>
-  </main>
+<!-- PROJETOS -->
+<section id="projetos">
+  <div class="container">
+    <span class="section-label">Portfólio</span>
+    <h2>Projetos</h2>
+    <div class="section-divider"></div>
+    <div class="projects-grid">
+      <div class="project-card fade-up">
+        <div class="project-badge badge-public"><span class="badge-dot"></span>Público</div>
+        <div class="project-title">PortfolioHUB</div>
+        <p class="project-desc">Plataforma centralizada para exibir e gerenciar projetos digitais. Um espaço organizado para apresentar experiências e habilidades.</p>
+        <button class="project-action" onclick="share('PortfolioHUB')">
+          Compartilhar
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9.5 1.5l3 3-3 3M12.5 4.5H4A2.5 2.5 0 001.5 7v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="project-card fade-up">
+        <div class="project-badge badge-public"><span class="badge-dot"></span>Público</div>
+        <div class="project-title">Currículo Digital</div>
+        <p class="project-desc">Apresentação online das minhas experiências, habilidades e formação. CV interativo e acessível em qualquer dispositivo.</p>
+        <button class="project-action" onclick="share('Currículo Digital')">
+          Compartilhar
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9.5 1.5l3 3-3 3M12.5 4.5H4A2.5 2.5 0 001.5 7v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="project-card fade-up">
+        <div class="project-badge badge-private"><span class="badge-dot"></span>Privado</div>
+        <div class="project-title">Projeto Administrativo</div>
+        <p class="project-desc">Projeto privado de organização de tarefas e processos internos. Acesso restrito a administradores autorizados.</p>
+        <button class="project-action" onclick="document.getElementById('seguranca').scrollIntoView({behavior:'smooth'})">
+          Acessar
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1.5a2.5 2.5 0 00-2.5 2.5v1.5H4a1 1 0 00-1 1v5a1 1 0 001 1h6a1 1 0 001-1v-5a1 1 0 00-1-1h-.5V4A2.5 2.5 0 007 1.5zm0 0v0M5.5 5.5V4a1.5 1.5 0 013 0v1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 PortfolioHUB - Desenvolvido por Felipe Jorsuran</p>
-  </footer>
+<!-- SEGURANÇA -->
+<section id="seguranca">
+  <div class="container">
+    <span class="section-label">Acesso</span>
+    <h2>Gestão de Usuários e Segurança</h2>
+    <div class="section-divider"></div>
+    <p class="security-info fade-up">
+      O PortfolioHUB possui controle de acesso simulado, separando projetos públicos e privados. Usuários visitantes podem visualizar projetos públicos, enquanto administradores possuem permissão para gerenciar conteúdos.
+    </p>
+    <div class="login-box fade-up">
+      <h3>Simulação de Login</h3>
+      <p>Entre com suas credenciais para acessar áreas restritas.</p>
+      <div class="field">
+        <label>Usuário</label>
+        <input type="text" id="loginUser" placeholder="visitante ou admin" value="visitante" />
+      </div>
+      <div class="field">
+        <label>Senha</label>
+        <input type="password" id="loginPass" placeholder="••••••••" />
+      </div>
+      <button class="btn-primary" style="width:100%; justify-content:center;" onclick="doLogin()">
+        Entrar
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="login-status" id="loginStatus"></div>
+    </div>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- IA -->
+<section id="ia">
+  <div class="container">
+    <span class="section-label">Ferramentas</span>
+    <h2>Uso da IA Gemini</h2>
+    <div class="section-divider"></div>
+    <div class="ia-card fade-up">
+      <div class="ia-icon">✨</div>
+      <div class="ia-content">
+        <h3>Google Gemini como ferramenta de apoio</h3>
+        <p>O Google Gemini foi utilizado durante a implantação, auxiliando na organização do projeto, estruturação das páginas, documentação, boas práticas de segurança e publicação no GitHub Pages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <span class="section-label">Fale comigo</span>
+    <h2>Contato</h2>
+    <div class="section-divider"></div>
+    <div class="contact-grid">
+      <a class="contact-card fade-up" href="mailto:felipe.jorsuran@gmail.com">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-label">E-mail</div>
+          <div class="contact-value">felipe.jorsuran@gmail.com</div>
+        </div>
+      </a>
+      <a class="contact-card fade-up" href="https://github.com/fjorsuran" target="_blank">
+        <div class="contact-icon">🐙</div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">fjorsuran</div>
+        </div>
+      </a>
+      <div class="contact-card fade-up" style="cursor:default;">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Localização</div>
+          <div class="contact-value">Riacho Fundo I — DF</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 PortfolioHUB · Desenvolvido por <a href="#">Felipe Jorsuran</a></p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
