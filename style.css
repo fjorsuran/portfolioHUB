@@ -1,9 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+body{
+    font-family: Arial;
+    background-color: #f5f5f5;
     text-align: center;
+    margin: 40px;
 }
 
-h1 {
+h1{
     color: purple;
+}
+
+div{
+    background: white;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
