@@ -1,1 +1,3 @@
-console.log("PortfolioHUB funcionando!");
+function mensagem() {
+    alert("Bem-vindo ao PortfolioHUB!");
+}
