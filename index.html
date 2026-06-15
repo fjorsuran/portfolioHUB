@@ -1,38 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>PortfolioHUB</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolioHUB - Felipe Jorsuran</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>PortfolioHUB</h1>
+  <header class="topo">
+    <nav>
+      <h2>PortfolioHUB</h2>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#seguranca">Segurança</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
 
-    <h2>Plataforma de Portfólios Digitais</h2>
+    <section class="hero">
+      <h1>Felipe Jorsuran Sousa Amaral</h1>
+      <p>Portfólio digital para apresentação de projetos, habilidades e experiências profissionais.</p>
+      <a href="#projetos" class="botao">Ver Projetos</a>
+    </section>
+  </header>
 
-    <p>Bem-vindo ao PortfolioHUB.</p>
+  <main>
+    <section id="sobre" class="card">
+      <h2>Sobre Mim</h2>
+      <p>
+        Sou um profissional organizado, responsável e focado em resultados.
+        Busco oportunidades para desenvolver habilidades interpessoais,
+        administrativas e tecnológicas.
+      </p>
+    </section>
 
-    <h3>Controle de Usuários</h3>
+    <section id="habilidades" class="card">
+      <h2>Habilidades</h2>
+      <div class="grid">
+        <div>Pacote Office</div>
+        <div>Canva</div>
+        <div>Atendimento ao Cliente</div>
+        <div>Organização</div>
+        <div>Git e GitHub</div>
+        <div>HTML, CSS e JavaScript</div>
+      </div>
+    </section>
 
-    <ul>
-        <li>Administrador - Pode gerenciar projetos.</li>
-        <li>Visitante - Pode visualizar projetos.</li>
-    </ul>
+    <section id="projetos" class="card">
+      <h2>Projetos</h2>
 
-    <h3>Projetos</h3>
+      <div class="projetos">
+        <div class="projeto">
+          <h3>PortfolioHUB</h3>
+          <p>Plataforma centralizada para exibir e gerenciar projetos digitais.</p>
+          <span>Público</span>
+          <button onclick="compartilhar()">Compartilhar</button>
+        </div>
 
-    <div>
-        <h4>Projeto Exemplo</h4>
-        <p>Sistema desenvolvido para apresentação de portfólios.</p>
-        <button>Compartilhar</button>
-    </div>
+        <div class="projeto">
+          <h3>Currículo Digital</h3>
+          <p>Apresentação online das minhas experiências, habilidades e formação.</p>
+          <span>Público</span>
+          <button onclick="compartilhar()">Compartilhar</button>
+        </div>
 
-    <br>
+        <div class="projeto privado">
+          <h3>Projeto Administrativo</h3>
+          <p>Projeto privado de organização de tarefas e processos internos.</p>
+          <span>Privado</span>
+          <button onclick="acessoNegado()">Acessar</button>
+        </div>
+      </div>
+    </section>
 
-    <button onclick="mensagem()">Acessar Plataforma</button>
+    <section id="seguranca" class="card">
+      <h2>Gestão de Usuários e Segurança</h2>
+      <p>
+        O PortfolioHUB possui controle de acesso simulado, separando projetos
+        públicos e privados. Usuários visitantes podem visualizar projetos públicos,
+        enquanto administradores possuem permissão para gerenciar conteúdos.
+      </p>
 
-    <script src="script.js"></script>
+      <div class="login">
+        <h3>Simulação de Login</h3>
+        <input type="text" id="usuario" placeholder="Usuário">
+        <input type="password" id="senha" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <p id="resultado"></p>
+      </div>
+    </section>
 
+    <section id="gemini" class="card">
+      <h2>Uso da IA Gemini</h2>
+      <p>
+        O Google Gemini foi utilizado como ferramenta de apoio durante a implantação,
+        auxiliando na organização do projeto, estruturação das páginas, documentação,
+        boas práticas de segurança e publicação no GitHub Pages.
+      </p>
+    </section>
+
+    <section id="contato" class="card">
+      <h2>Contato</h2>
+      <p>E-mail: felipe.jorsuran@gmail.com</p>
+      <p>GitHub: fjorsuran</p>
+      <p>Localização: Riacho Fundo I - DF</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 PortfolioHUB - Desenvolvido por Felipe Jorsuran</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
